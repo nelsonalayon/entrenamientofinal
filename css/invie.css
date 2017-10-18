@@ -1,46 +1,27 @@
-/*selector universal*/
-* {
-	border: 1px solid red;
-	margin: 10px;
+.titulo {
+	font-size: 70px;
 }
-
-/*selector de etiqueta*/
-
-header {
-	background: blue;
-}
-
-section {
-	background: purple;
-}
-
-/*selector descendente*/
-
-article h3 {
-	color: green;
-}
-
-/*selectores de clase*/
 
 .title-a {
-	background: yellow;
+	font-size: 24px;
 }
 
-.title-b {
-	background: salmon;
+.title-b{
+	font-size: 50px;
+}
+.guitarras h2 {
+	font-size: 35px;
 }
 
-/*selector de id*/
-/*los id no se repiten los de class si se pueden repetir*/
-
-#guitarras {
- border: 3px solid brown;
+.portada {
+	background-image: url("../images/background.png");
+	color: white;
 }
 
-#portada {
- border: 3px solid orange;
+.guitarras {
+	color: #1F313C;
 }
 
-#header {
-	border: 3px solid black;
+.menu {
+	font-size: 24px;
 }
