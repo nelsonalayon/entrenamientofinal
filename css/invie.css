@@ -1,0 +1,46 @@
+/*selector universal*/
+* {
+	border: 1px solid red;
+	margin: 10px;
+}
+
+/*selector de etiqueta*/
+
+header {
+	background: blue;
+}
+
+section {
+	background: purple;
+}
+
+/*selector descendente*/
+
+article h3 {
+	color: green;
+}
+
+/*selectores de clase*/
+
+.title-a {
+	background: yellow;
+}
+
+.title-b {
+	background: salmon;
+}
+
+/*selector de id*/
+/*los id no se repiten los de class si se pueden repetir*/
+
+#guitarras {
+ border: 3px solid brown;
+}
+
+#portada {
+ border: 3px solid orange;
+}
+
+#header {
+	border: 3px solid black;
+}
