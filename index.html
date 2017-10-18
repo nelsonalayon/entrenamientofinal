@@ -69,9 +69,40 @@
 		<a href="tel:+575643455678"><strong>Telefono</strong><span>234345456</span></a> 
 	  <a href="mailto:contacto@hotmail.com"><strong>E-mail</strong><span>contacto@hotmail.com</span></a>
 	</div>
-	<div class="formulario">
-		formulario
-	</div>
+	<form class="formulario">
+		<label for="Nombre">Nombre</label>
+		<input type="text" required id="nombre" name="nombre">
+		<label for="email">E-mail</label>
+		<input type="email" required id="email" name="email">
+		<div class="sexo">
+				<label for="mujer">
+					<input type="radio" id="mujer" name="sexo" value="mujer">Mujer
+				</label>
+				<label for="hombre">
+					<input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+				</label>
+		</div>
+		<div class="intereses">
+			<label for="cotizacion">
+			<input type="checkbox" name="" id="cotizacion" value="cotizacion"> Cotizacion
+			</label>
+			<label for="reclamos">
+			<input type="checkbox" name="" id="reclamos" value="reclamos"> Reclamos
+			</label>
+			<label for="comentarios">
+			<input type="checkbox" name="" id="comentarios" value="comentarios"> Comentarios
+			</label>
+			<label for="otros">
+			<input type="checkbox" name="" id="otros" value="otros"> Otros
+			</label>
+		</div>
+		<div>
+			<label for="comentarios">Comentarios</label>
+			<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+			<input type="submit" value="Enviar" name="">
+		</div>
+		
+	</form>
 	</div>
 </footer>
 </body>
