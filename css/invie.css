@@ -11,7 +11,7 @@ body {
 	margin: 0;
 }
 
-button {
+.button {
 	border-radius: 5px;
 	background: #fd324e;
 	color:white;
@@ -115,6 +115,13 @@ button {
 	position: relative;
 }
 
+.contacto {
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
 .contacto img {
 	display: block;
 }
@@ -126,4 +133,46 @@ button {
 .contacto a {
 	color:white;
 	text-decoration: none;
+	margin: 10px 10px 10px 0;
+}
+
+.footer .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario {
+	display: flex;
+	width: 400px;
+	color: white;
+	padding: 50px 10px;
+}
+
+/*para ponerle el mismo atributo a dos etiquetas se ponen las clases separadas de una coma*/
+
+.col1, .col2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.col1 {
+	margin-right: 15px;
+}
+
+.col2 {
+	align-items: flex-start;
+}
+
+.intereses label {
+	font-size: 12px;
+}
+
+/*clase, etiqueta, comas y otras clases*/
+
+.formulario label, .sexo, .intereses {
+	margin-bottom: 10px;
+}
+
+.sexo {
+	margin-top: 10px;
 }

@@ -32,7 +32,7 @@
 	<div class="contenedor">
 	 <h1 class="titulo">Guitarras inviesibles</h1> <!-- titulo -->
 	 <h3 class="title-a">Se la estrella de rock que siempre quisiste ser</h3>  <!-- slogan -->
-	 <button class="boton">conoce mas</button> <!-- boton	 -->
+	 <button class="button">conoce mas</button> <!-- boton	 -->
 	</div>
 </section>
 <section id="guitarras" class="guitarras contenedor">	<!-- Las guitarras -->
@@ -70,21 +70,22 @@
 	  <a href="mailto:contacto@hotmail.com"><strong>E-mail</strong><span>contacto@hotmail.com</span></a>
 	</div>
 	<form class="formulario">
-		<label for="Nombre">Nombre</label>
-		<input type="text" required id="nombre" name="nombre">
-		<label for="email">E-mail</label>
-		<input type="email" required id="email" name="email">
-		<div class="sexo">
+		<div class="col1">
+			<label for="Nombre">Nombre</label>
+			<input type="text" required id="nombre" name="nombre">
+			<label for="email">E-mail</label>
+			<input type="email" required id="email" name="email">
+			<div class="sexo">
 				<label for="mujer">
-					<input type="radio" id="mujer" name="sexo" value="mujer">Mujer
+					<input type="radio" id="mujer" name="sexo" value="mujer" checked>Mujer
 				</label>
 				<label for="hombre">
 					<input type="radio" id="hombre" name="sexo" value="hombre">Hombre
 				</label>
-		</div>
-		<div class="intereses">
+			</div>
+			<div class="intereses">
 			<label for="cotizacion">
-			<input type="checkbox" name="" id="cotizacion" value="cotizacion"> Cotizacion
+			<input type="checkbox" name="" checked id="cotizacion" value="cotizacion"> Cotizacion
 			</label>
 			<label for="reclamos">
 			<input type="checkbox" name="" id="reclamos" value="reclamos"> Reclamos
@@ -95,11 +96,13 @@
 			<label for="otros">
 			<input type="checkbox" name="" id="otros" value="otros"> Otros
 			</label>
-		</div>
-		<div>
+			</div>
+			</div>
+		<div class="col2">
+
 			<label for="comentarios">Comentarios</label>
 			<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
-			<input type="submit" value="Enviar" name="">
+			<input type="submit" value="Enviar" name="" class="button">
 		</div>
 		
 	</form>
