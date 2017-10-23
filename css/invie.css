@@ -11,11 +11,64 @@ body {
 	margin: 0;
 }
 
+table {
+	width: 100%;
+}
+
+th {
+	background: #273b47;
+	color:white;
+	text-align: left;
+}
+
+th {
+	padding: 10px 20px;
+}
+
+td {
+	padding: 20px;
+}
+
+table, td, th {
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+input, textarea {
+	outline: none;
+}
+
+input:focus, textarea:focus {
+	background: lightgray;
+}
+
+.contenedor {
+	width: 800px;
+	margin:auto;
+}
+
+.background {
+	background-image: url("../images/background.png");
+	background-size: cover;
+}
+
 .button {
-	border-radius: 5px;
-	background: #fd324e;
+	border-radius: 12px;
 	color:white;
 	border: none;
+	padding: 7px 15px;
+	font-size: 18px;
+	/*background: #fd324e;
+	background: linear-gradient(to left, #fe334e, #ff7350);*/
+		cursor: pointer;
+	text-decoration: none;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
+background: #feccb1; /* Old browsers */
+background: -moz-linear-gradient(top,  #feccb1 0%, #f17432 50%, #ea5507 51%, #fb955e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+
 }
 
 .titulo {
@@ -23,6 +76,10 @@ body {
 	font-size: 70px;
 	margin-bottom: 0;
 	margin-top: 70px;
+}
+
+.titulo span {
+	text-decoration: underline;
 }
 
 
@@ -33,6 +90,7 @@ body {
 
 .footer {
 	background: #273b47;
+	padding: 50px 10px;
 }
 
 .title-b{
@@ -45,9 +103,9 @@ body {
 }
 
 .portada {
-	background-image: url("../images/background.png");
 	color: white;
 	padding: 20px;
+	height: 500px;
 	
 }
 
@@ -57,6 +115,7 @@ body {
 
 .guitarras {
 	color: #1F313C;
+	margin-bottom: 60px !important;
 	}
 
 .menu {
@@ -75,21 +134,23 @@ body {
 	content: "*"; 
 	font-size: 50px;
 	line-height: 20px;
-	color: blue;
+	color: white;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
 }
 
 .logotipo {
 	display: inline-block;
+	margin-left: 0;
 }
 
 
-.contenedor {
-	width: 800px;
-	margin:auto;
-}
 
 .guitarra {
-	margin: 10px;
+	margin: 10px 10px 40px 10px;
 	padding: 10px;
 	border: 1px solid #1F313C;
 	border-radius: 8px;
@@ -98,16 +159,20 @@ body {
 .guitarra ol {
 	padding: 0;
 }
+
+.guitarra.b{
+ height: 190px;
+}
+
 .right {
 	float: right;
 	position: relative;
-	top: -127px;
+	top: -117px;
 }
 
 .left {
 	float: left;
 	position: relative;
-	top:80px;
 }
 
 .contenedor-guitarra-a {
@@ -116,11 +181,14 @@ body {
 
 .contenedor-guitarra-b {
 	margin-left: 370px;
+	position: relative;
+	bottom: 90px;
 }
 
 .header {
 	position: relative;
 }
+
 
 .contacto {
 	display: flex;
@@ -152,8 +220,8 @@ body {
 	display: flex;
 	width: 400px;
 	color: white;
-	padding: 50px 10px;
-}
+	
+	}
 
 /*para ponerle el mismo atributo a dos etiquetas se ponen las clases separadas de una coma*/
 
@@ -170,6 +238,10 @@ body {
 	align-items: flex-start;
 }
 
+.col2 .button{
+margin-top: 15px;
+}
+
 .intereses label {
 	font-size: 12px;
 }
@@ -184,25 +256,9 @@ body {
 	margin-top: 10px;
 }
 
-table {
-	width: 100%;
+.tabla{
+	margin:50px 0px;
 }
 
-th {
-	background: #273b47;
-	color:white;
-	text-align: left;
-}
 
-th {
-	padding: 10px 20px;
-}
 
-td {
-	padding: 20px;
-}
-
-table, td, th {
-	border: 1px solid #273b47;
-	border-collapse: collapse;
-}
