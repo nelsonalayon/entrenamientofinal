@@ -260,5 +260,11 @@ margin-top: 15px;
 	margin:50px 0px;
 }
 
+@media screen and (max-width: 800px) {
+	body {
+		background: peru;
+	}
+}
+
 
 
