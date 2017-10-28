@@ -43,7 +43,9 @@ input:focus, textarea:focus {
 }
 
 .contenedor {
-	width: 800px;
+	width: auto;
+	max-width: 800px;
+	/*width: 800px;*/
 	margin:auto;
 }
 
@@ -64,7 +66,7 @@ input:focus, textarea:focus {
 	text-decoration: none;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
 background: #feccb1; /* Old browsers */
-background: -moz-linear-gradient(top,  #feccb1 0%, #f17432 50%, #ea5507 51%, #fb955e 100%); /* FF3.6-15 */
+background: -moz-line      ar-gradient(top,  #feccb1 0%, #f17432 50%, #ea5507 51%, #fb955e 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
@@ -261,9 +263,55 @@ margin-top: 15px;
 }
 
 @media screen and (max-width: 800px) {
-	body {
-		background: peru;
+/*	.contenedor {
+		width:auto;
+		max-width: 800px;
+
+	}*/
+	.titulo {
+		font-size: 45px;
 	}
+
+	.title-a {
+		font-size: 18px;
+		margin-top: 30px;
+	}
+
+	.portada {
+		height: auto;
+	}
+
+	.portada .button {
+		margin-bottom: 30px;
+		display: inline-block;
+	}
+
+	/*guitarras*/
+	.guitarras {
+		text-align: center;
+	}
+
+	.left, .right {
+		float: none;
+		position: static;
+	}
+	.title-b {
+		margin: 0;
+	}
+
+	.guitarra li {
+		list-style: none;
+	}
+
+	.guitarra.b {
+		height: auto;
+	}
+
+	.contenedor-guitarra-b {
+		position:static;
+		margin:0;
+	}
+	/*guitarras*/
 }
 
 
