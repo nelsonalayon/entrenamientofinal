@@ -6,7 +6,8 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/invie.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- La siguiente linea (la etiqueta meta) es importantisimo para nuestro diseño movil porque le dice al dispositivo que use todo el tamaño de la pantalla y que se adapte a ella. Si no se pone esta linea, el dispositivo va a usar el tamaño normal y no va a funcionar el responsive design, ojo -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" >
 	<!-- <link rel="stylesheet" type="text/css" media="(max-width: 800px)" href="css/media-querie.css"> -->
 </head>
 <body>
@@ -113,11 +114,38 @@
 	</div>
 </footer>
 <script>
+
+	// el siguiente es un mediaquerie hecho con javascript
+	var consulta = window.matchMedia("(max-width:500px)");
+	consulta.addListener(mediaQuery);
+
 	var $burguerButton = document.getElementById("burguer-button");
 	var $menu = document.getElementById("menu");
-	$burguerButton.addEventListener("touchstart", function(){
+
+	function toggleMenu() {
+
 		$menu.classList.toggle("active")
-	});
+	};
+
+	function mediaQuery() {
+
+		if(consulta.matches)
+			{
+				console.log("se cumplio la condición");
+			
+			$burguerButton.addEventListener("touchstart", toggleMenu);
+
+			}
+	
+		else {
+			$burguerButton.removeEventListener("touchstart", toggleMenu);
+			console.log("no se cumplio la condición");
+		}
+		
+	}
+	mediaQuery();
+			
+	// $burguerButton.addEventListener("touchstart", toggleMenu);
 
 	
 </script>
