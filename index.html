@@ -15,7 +15,9 @@
 	<header id="header" class="header contenedor"> <!-- header -->
 		
 		<figure class="logotipo"> <!-- logotipo -->
-			<img src="images/invie.jpg" width="186" height="60" alt="Invie, tus mejores guitarras">
+
+			<!-- para poner varios tipos de imagen, en vez de usar src, usamos srcset -->
+			<img src="images/invie.jpg" srcset="images/invie.jpg 1x, images/invie2x.png 2x" width="186" height="60" alt="Invie, tus mejores guitarras">
 		</figure>
 
 		<span class="burguer-button icon-menu" id="burguer-button"></span>
@@ -42,13 +44,15 @@
 </section>
 <section id="guitarras" class="guitarras contenedor">	<!-- Las guitarras -->
 	<h2>Nuestras guitarras</h2>	<!-- titulo -->
-	<div class="video-responsive-contenedor">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/8Akb1t37T4E" frameborder="0" allowfullscreen class="video-responsive-src"></iframe>		
+	<div class="contenedorVideo">
+		<iframe src="https://www.youtube.com/embed/8KH7TSa8qlk" width="100%" height="100%" frameborder="0" allowfullscreen class="video-responsive-src"></iframe>		
 	</div>
+	<video src="images/320x240.ogg"> </video>
 
-	<article class="guitarra"> <!-- guitarra 1 -->
-		 <img data-src="images/invie-acustica.png" alt="guitarra invie acustica" width="350" class="right" />
-		 <video src=""></video>
+	<!-- guitarra 1 -->
+		<!-- para poner imagenes retina en imagenes que cargan con lazy loading, unicamente ponemos la direccion de la imagen retina separada de la imagen primera por el signo | (paid) -->
+		 <img data-src="images/invie-acustica.png|invie-acustica2x.png" alt="guitarra invie acustica" width="350" class="right" />
+		 
 		 <div class="contenedor-guitarra-a">
 		 <h3 class="title-b">Invie Acústica</h3>
 		 <ol>
@@ -57,11 +61,10 @@
 		 	<li>Incluye estuche invisible de aluminio</li>
 		 </ol>
 		 </div>
-	</article>
 	<article class="guitarra b"> 	<!-- guitarra 2 -->
 
 		<!-- Las imagenes tienen en src ademas la palabra data, que es un requisito que pide lazy loading para cargar las imagenes solamente cuando aparezcan en pantalla, no carga imagenes que esten fuera de pantalla -->
-		 <img data-src="images/invie-classic.png" alt="guitarra invie classic" width="350" class="left" />
+		 <img data-src="images/invie-classic.png|invie-classic2x.png" alt="guitarra invie classic" width="350" class="left" />
 		 <div class="contenedor-guitarra-b">
 		 <h3 class="title-b">Invie Classic</h3>
 		 <ol>
@@ -77,7 +80,7 @@
 <footer class="footer"> 
 	<div class="contenedor">
 	<div class="contacto">
-		<img data-src="images/invie-white.png" alt="logotipo blanco" width="260">
+		<img data-src="images/invie-white.png|invie-white2x.png" alt="logotipo blanco" width="260">
 		<a href="tel:+575643455678"><strong>Telefono</strong><span>234345456</span></a> 
 	  <a href="mailto:contacto@hotmail.com"><strong>E-mail</strong><span>contacto@hotmail.com</span></a>
 	</div>
@@ -167,3 +170,4 @@
 </script>
 </body>
 </html>
+
