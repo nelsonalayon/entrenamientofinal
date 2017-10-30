@@ -127,6 +127,11 @@
 <!-- El siguiente es un script externo (no es necesario siempre copiar el codigo y pegarlo en nuestro index) que carga el lazyloading -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
 
+<!-- El siguiente script es para hacer funcionar hammerjs, que es hacer que el menu se pueda mover -->
+<!-- con el dedo en pantallas de dispositivos moviles --> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
 <script>
 
 	// el siguiente es un mediaquerie hecho con javascript
@@ -138,8 +143,20 @@
 
 	function toggleMenu() {
 
-		$menu.classList.toggle("active")
+		$menu.classList.toggle("active");
 	};
+
+		function showMenu() {
+
+		$menu.classList.add("active");
+	};
+
+		function hideMenu() {
+
+		$menu.classList.remove("active");
+	};
+
+
 
 	function mediaQuery() {
 
@@ -166,6 +183,13 @@
 			
 	// $burguerButton.addEventListener("touchstart", toggleMenu);
 
+	// gestos touch con hammerjs.io
+	var $body = document.body;
+	var gestos = new Hammer($body, myOptions);
+
+	gestos.on('swipeleft', hideMenu);
+
+	gestos.on('swiperight', showMenu);
 	
 </script>
 </body>
